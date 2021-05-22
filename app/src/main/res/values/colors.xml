@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="transparent_background">#AB363535</color>
+    <color name="start_color_gradient">#443C20</color>
+    <color name="end_color_gradient">#e8a564</color>
+    <color name="fb_color">#4967AA</color>
+    <color name="google_color">#C1483F</color>
+
+</resources>
