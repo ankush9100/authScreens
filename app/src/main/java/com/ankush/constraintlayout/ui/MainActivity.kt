@@ -1,10 +1,10 @@
-package com.ankush.constraintlayout
+package com.ankush.constraintlayout.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.view.WindowManager
+import com.ankush.constraintlayout.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -17,11 +17,11 @@ class MainActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
         )
         register_button.setOnClickListener{
-            var intent = Intent(this,SignupActivity::class.java)
+            var intent = Intent(this, SignupActivity::class.java)
             startActivity(intent)
         }
         login_button.setOnClickListener{
-            var intent = Intent(this,LoginActivity::class.java)
+            var intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
     }

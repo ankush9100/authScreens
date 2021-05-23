@@ -2,4 +2,5 @@
     <string name="app_name">ConstraintLayout</string>
     <string name="signup">Register</string>
     <string name="login">Login</string>
+    <string name="dashboarrd">Dashboard</string>
 </resources>
