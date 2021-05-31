@@ -8,8 +8,10 @@ import androidx.annotation.NonNull
 import androidx.recyclerview.widget.RecyclerView
 import com.ankush.constraintlayout.R
 import com.ankush.constraintlayout.model.DishesModel
+import com.ankush.constraintlayout.model.FoodResponse
+import com.ankush.constraintlayout.model.FoodResponseItem
 
-class DishesAdapter(private var moviesList: List<DishesModel>) :
+class DishesAdapter(private var moviesList: List<FoodResponseItem>) :
     RecyclerView.Adapter<DishesAdapter.MyViewHolder>() {
     inner class MyViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         var title: TextView = view.findViewById(R.id.title)
@@ -24,9 +26,9 @@ class DishesAdapter(private var moviesList: List<DishesModel>) :
     }
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val movie = moviesList[position]
-        holder.title.text = movie.getTitle()
-        holder.genre.text = movie.getGenre()
-        holder.year.text = movie.getYear()
+        holder.title.text = movie.name
+        holder.genre.text = movie.category
+        holder.year.text = movie.description
     }
     override fun getItemCount(): Int {
         return moviesList.size

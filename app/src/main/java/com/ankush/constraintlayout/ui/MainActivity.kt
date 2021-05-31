@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
 import com.ankush.constraintlayout.R
+import com.ankush.constraintlayout.ui.SignUp.SignupActivity
+import com.ankush.constraintlayout.ui.login.LoginActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

@@ -9,6 +9,7 @@ import android.os.Handler
 import android.view.WindowManager
 import android.widget.Toast
 import com.ankush.constraintlayout.R
+import com.ankush.constraintlayout.ui.Dashboard.DashboardActivity
 
 class SplashActivity : AppCompatActivity() {
     var sharedPreferences: SharedPreferences? =  null
@@ -23,21 +24,19 @@ class SplashActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
         )
         sharedPreferences = this.getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE)
-        val successValue =  sharedPreferences?.getInt("success",0)
-         value = successValue.toString()
+        val successValue =  sharedPreferences?.getString("token",null)
+         value = successValue
 
 
 
         // we used the postDelayed(Runnable, time) method
         // to send a message with a delayed time.
         Handler().postDelayed({
-           if(value=="1"){
-               Toast.makeText(this,value,Toast.LENGTH_LONG).show()
+           if(value!=null){
                val intent = Intent(this, DashboardActivity::class.java)
                startActivity(intent)
                finish()
            }else{
-               Toast.makeText(this,value,Toast.LENGTH_LONG).show()
                val intent = Intent(this, MainActivity::class.java)
                startActivity(intent)
                finish()

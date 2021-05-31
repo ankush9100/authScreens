@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="center"
     android:orientation="vertical"
-    tools:context=".ui.SignupActivity">
+    tools:context=".ui.SignUp.SignupActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -64,16 +64,45 @@
             android:padding="10dp" />
 
         <EditText
-            android:id="@+id/editTextPhone"
+            android:id="@+id/editTextOwnerName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:background="@drawable/background_edit_text"
             android:ems="10"
-            android:hint="Phone"
-            android:inputType="phone"
+            android:hint="OwnerName"
+            android:inputType="textPersonName"
             android:padding="10dp" />
 
+        <EditText
+            android:id="@+id/editTextAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/background_edit_text"
+            android:ems="10"
+            android:hint="Address"
+            android:inputType="textPersonName"
+            android:padding="10dp" />
+        <EditText
+            android:id="@+id/editTextPinCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/background_edit_text"
+            android:ems="10"
+            android:hint="PinCode"
+            android:inputType="phone"
+            android:padding="10dp" />
+        <EditText
+            android:id="@+id/editTextemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/background_edit_text"
+            android:hint="Email"
+            android:inputType="textPersonName"
+            android:padding="10dp" />
         <EditText
             android:id="@+id/editTextTextPassword"
             android:layout_width="match_parent"
@@ -86,18 +115,19 @@
             android:padding="10dp" />
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress"
+            android:id="@+id/editTextPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:background="@drawable/background_edit_text"
             android:ems="10"
-            android:hint="Email"
-            android:inputType="textEmailAddress"
+            android:hint="Phone"
+            android:inputType="phone"
             android:padding="10dp" />
 
+
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btn_register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/button_gradient"
